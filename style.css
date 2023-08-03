@@ -1,0 +1,412 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: 'jost';
+  box-sizing: border-box;
+  list-style: none;
+  overflow-x: hidden;
+}
+
+.main-page {
+  width: 100vw;
+  height: 110vh;
+  display: flex;
+  position: relative;
+}
+
+.logo h1 {
+  position: relative;
+  display: inline-block;
+  margin-top: 20px;
+  font-size: 35px;
+}
+
+.logo h1::before {
+  content: '';
+  right: 54px;
+  bottom: 4px;
+  position: absolute;
+  width: 30px;
+  height: 5px;
+  background-color: blue;
+}
+
+.navbar {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 13%;
+  height: 100vh;
+  border-right: 1px solid rgba(110, 109, 109, 0.397);
+}
+
+.navbar li {
+  margin-top: 60px;
+}
+
+.navbar li i {
+  margin-right: 15px;
+  color: rgba(0, 0, 255, 0.925);
+}
+
+.navbar li a {
+  color: black;
+  font-size: 18px;
+  text-decoration: none;
+  transition: 1s all;
+}
+/* .navbar li a:hover{
+  display: inline-block;
+  width: 180px;
+  line-height: 2.2;
+  border-radius: 30px;
+  padding: 0px 15px;
+  height: 40px;
+  background-color: aqua;
+} */
+
+
+.login-btns {
+  display: flex;
+  flex-direction: column;
+  margin-top: 120px;
+}
+
+.login-btns button {
+  margin-top: 100px;
+  width: 160px;
+  height: 40px;
+  font-size: 16px;
+  border-radius: 15px;
+  outline: none;
+  color: black;
+  border: 1px solid blue;
+  background-color: transparent;
+  transition: .7s all;
+  cursor: pointer;
+
+}
+
+.login-btns button:hover{
+  background-color: blue;
+  border: 1px solid black;
+  color: white;
+
+}
+
+/* =============================================================2 */
+
+.right-side-main-content {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  width: 87vw;
+  height: 100vh;
+
+
+}
+
+.top-search-content {
+  /* margin-top: 10px; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 20px;
+  height: 120px;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.397);
+  /* background-color: red; */
+}
+
+.top-search-content h2 {
+  font-size: 35px;
+  font-weight: 400;
+}
+
+.search-bar {
+  width: 480px;
+  height: 40px;
+  border-radius: 50px;
+  border: 1px solid rgba(128, 128, 128, 0.363);
+
+}
+
+.search-bar input {
+  /* text-align: left; */
+  width: 90%;
+  height: 100%;
+  border-radius: 50px;
+  padding: 0px 20px;
+  outline: none;
+  border: none;
+}
+
+.search-bar button {
+  text-align: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50px;
+  border: 1px solid rgba(128, 128, 128, 0.363);
+  background-color: transparent;
+}
+
+.bottom-main-content {
+  margin-top: 20px;
+  padding: 15px 40px;
+  width: 50%;
+  overflow: hidden;
+}
+
+/* 
+
+
+@keyframes slide{
+  0%{
+      transform: translateX(0);
+  }
+  25%{
+      transform: translateX(0);
+  }
+  30%{
+      transform: translateX(-100%);
+  }
+  50%{
+      transform: translateX(-100%);
+  }
+  55%{
+      transform: translateX(-200%);
+  }
+  75%{
+      transform: translateX(-200%);
+  }
+  80%{
+      transform: translateX(-300%);
+  }
+  100%{
+      transform: translateX(-300%);
+  }
+} */
+.img1 {
+  width: 100%;
+  position: relative;
+  height: 220px;
+  overflow: hidden;
+  border-radius: 60px;
+  display: flex;
+}
+
+.img1 img {
+  /* animation: slide 20s infinite; */
+  transition: .9s all;
+  height: 100%;
+  width: 100%; 
+  object-fit: cover;
+}
+
+.one{
+  width: 100000%;
+}  
+
+.bottom-main-content img:hover , .inner-right img:hover {
+  transform: scale(1.1);
+}
+
+.bottom-main-content .img2 {
+  position: relative;
+  margin-top: 15px;
+  width: 100%;
+  height: 220px;
+  overflow: hidden;
+  border-radius: 60px;
+}
+
+.img2 h3 {
+  position: absolute;
+  right: 40px;
+  top: 80px;
+  font-size: 35px;
+  color: white;
+}
+
+.img1 h3 {
+  position: absolute;
+  left: 40px;
+  top: 80px;
+  font-size: 35px;
+  color: white;
+}
+
+.img2 img {
+  transition: .5s all;
+  height: 100%;
+  width: 100%;
+}
+
+.down-imgs {
+  display: flex;
+}
+
+.bottom-main-content .img3 {
+  position: relative;
+  margin-top: 15px;
+  width: 46%;
+  height: 290px;
+  overflow: hidden;
+  border-radius: 60px;
+}
+
+.img3 img {
+  transition: 1s all;
+  width: 100%;
+}
+
+.img3 img:hover {
+  transform: translateY(-50px);
+}
+
+.img3 button {
+  cursor: pointer;
+  width: 130px;
+  height: 35px;
+  position: absolute;
+  bottom: 50px;
+  left: 100px;
+  color: white;
+  border-radius: 40px;
+  border: 1px solid white;
+  background-color: rgba(0, 0, 0, 0.514);
+  transition: .6s all;
+}
+
+.bottom-main-content .img4 {
+  position: relative;
+  margin-top: 15px;
+  width: 48%;
+  height: 290px;
+  overflow: hidden;
+  border-radius: 60px;
+  margin-left: 30px;
+}
+
+.img4 img:hover {
+  transform: translateY(-20px);
+}
+
+.img4 img {
+  transition: 1s all;
+  width: 100%;
+}
+
+.img4 button {
+  cursor: pointer;
+  width: 130px;
+  height: 35px;
+  position: absolute;
+  bottom: 50px;
+  left: 100px;
+  color: white;
+  border-radius: 40px;
+  border: 1px solid white;
+  background-color: rgba(0, 0, 0, 0.514);
+  transition: .6s all;
+}
+
+.img4 button:hover {
+  background-color: black;
+}
+
+.img3 button:hover {
+  background-color: black;
+}
+
+/* =-=-=-=-=-=-=-=-=-=-=-=-==-=-=-=-=--= */
+.inner-right {
+  position: absolute;
+  top: 121px;
+  right: 0;
+  height: 100%;
+  width: 50%;
+  padding: 10px 10px;
+}
+
+.inner-right-top {
+  display: flex;
+  gap: 20px;
+}
+
+.r-img1 {
+  position: relative;
+  margin-top: 15px;
+  width: 44%;
+  height: 550px;
+  overflow: hidden;
+  border-radius: 60px;
+
+}
+
+.r-img1 img {
+  transition: .7s all;
+  height: 100%;
+  width: 100%;
+}
+
+.r-img2 {
+  /* background-color:red; */
+  position: relative;
+  margin-top: 15px;
+  width: 44%;
+  height: 550px;
+  overflow: hidden;
+  border-radius: 60px;
+
+}
+
+.r-img2 img {
+  transition: .7s all;
+  height: 100%;
+  width: 100%;
+}
+
+.r-img3 {
+  margin-top: 20px;
+  width: 91%;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 60px;
+
+}
+
+.r-img3 img {
+  transition: .9s all;
+  width: 100%;
+}
+
+/*=================================================================== OWL CROSUL */
+.scnd-page{
+  /* background-color: red; */
+  width: 85%;
+  margin-left: 250px;
+
+}
+
+.sellers{
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+.owl-carousel{
+  width: 0%;
+  height: 610px;
+  overflow: hidden;
+  display: flex;
+}
+
+.owl-carousel .item{
+
+  width: 370px;
+}
+
+.item img{
+  width: 100%;
+  height: 100%;
+}

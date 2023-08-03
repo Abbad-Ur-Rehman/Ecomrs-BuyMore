@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <!-- GOOGLE -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Jost:wght@300;500;700;900&family=Lato:wght@100;300&family=Montserrat:ital,wght@0,500;0,600;0,900;1,700&family=Pacifico&family=Poppins:ital,wght@0,300;0,500;0,900;1,100&display=swap"
+    rel="stylesheet" />
+  <!-- FONT AWESOME CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css" />
+  <!-- OWL -->
+  <link rel="stylesheet" href="./js/owl.carousel.min.css">
+  <link rel="stylesheet" href="./js/owl.carousel.min.css">
+</head>
+
+<body>
+  <!-- LOGIN PAGE -->
+  <div class="main-page">
+    <div class="navbar" id="navbar">
+      <div class="logo">
+        <h1>BuyMore</h1>
+      </div>
+      <ul id="ul-one">
+        <li class="active">
+          <a href=""> <i class="fa-solid fa-fire"></i> Dashborad</a>
+        </li>
+        <li>
+          <a href="">
+            <i class="fa-solid fa-cart-shopping"></i>Clothing Store</a>
+        </li>
+        <li>
+          <a href=""> <i class="fa-solid fa-gift"></i>Men Store</a>
+        </li>
+        <li>
+          <a href=""><i class="fa-solid fa-lightbulb"></i>Women Store</a>
+        </li>
+      </ul>
+      <div class="login-btns">
+        <a href="./Pages/login-form-01/index.html"><button id="login">Sign Up</button></a>
+        <!-- <button id="signup">Sign Up</button> -->
+      </div>
+    </div>
+    <div class="right-side-main-content">
+      <div class="top-search-content" id="top-search-content">
+        <h2>Explore</h2>
+        <div class="search-bar">
+          <input type="text" name="" id="search-bar" placeholder="search" />
+          <button id="search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </div>
+        <div></div>
+      </div>
+      <div class="bottom-main-content">
+        <!-- IMAGES  -->
+        <div class="img1" id="img1">
+          <img src="./asst/Screenshot 2023-08-02 233002.png" alt="" class="one" />
+          <!-- <img src="./asst/new4.jpg" alt=""/>
+            <img src="./asst/new5.jpg" alt=""/>
+            <img src="./asst/new2.jpg" alt=""/> -->
+        </div>
+        <div class="img2">
+          <img src="./asst/Screenshot 2023-08-02 233100.png" alt="" />
+        </div>
+        <div class="down-imgs">
+          <div class="img3">
+            <img src="./asst/23.6.7_edenrobe_HomePageBanner_WomenUnstitched_DSKTP.jpg" alt="" />
+            <button id="shop-women">Shop Women</button>
+          </div>
+          <div class="img4">
+            <img src="./asst/23.7.8_edenrobe_HomePageBanner_Men_DSKTP.jpg" alt="" />
+            <button id="shop-women">Shop Men</button>
+          </div>
+        </div>
+      </div>
+      <div class="inner-right">
+        <div class="inner-right-top">
+          <div class="r-img1">
+            <div class="overlay"></div>
+            <img src="./asst/23.webp" alt="" class="img1-r" />
+          </div>
+          <div class="r-img2">
+            <img src="./asst/23s.webp" alt="" />
+          </div>
+        </div>
+        <div class="inner-right-bottom">
+          <div class="r-img3">
+            <img src="./asst/Screenshot 2023-08-03 142050.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ===========================LOGIN FORM -->
+  <div class="scnd-page" style="height: 100vh">
+    <div class="sellers">
+      <h4>Best Sellers</h4>
+    </div>
+    <div class="owl-carousel owl-theme">
+      <div class="item">
+        <img src="./asst/1-show.webp" alt="" />
+      </div>
+      <div class="item">
+        <img src="./asst/2-show.webp" alt="" />
+      </div>
+      <div class="item">
+        <img src="./asst/3-show.webp" alt="" />
+      </div>
+      <div class="item">
+        <img src="./asst/4-show.webp" alt="" />
+      </div>
+      <div class="item">
+        <img src="./asst/5-show.webp" alt="" />
+      </div>
+      <div class="item">
+        <img src="./asst/6-show.webp" alt="" />
+      </div>
+      <div class="item">
+        <img src="./asst/7-show.webp" alt="" />
+      </div>
+      <div class="item">
+        <img src="./asst/8-show.webp" alt="" />
+      </div>
+
+    </div>
+  </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM="
+    crossorigin="anonymous"></script>
+
+  <script src="./js/owl.carousel.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+    integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"
+    integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="script.js"></script>
+
+
+</body>
+
+</html>
