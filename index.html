@@ -23,43 +23,44 @@
 
 <body>
   <!-- LOGIN PAGE -->
-  <div class="main-page">
-    <div class="navbar" id="navbar">
-      <div class="logo">
-        <h1>BuyMore</h1>
-      </div>
-      <ul id="ul-one">
-        <li class="active">
-          <a href=""> <i class="fa-solid fa-fire"></i> Dashborad</a>
-        </li>
-        <li>
-          <a href="">
-            <i class="fa-solid fa-cart-shopping"></i>Clothing Store</a>
-        </li>
-        <li>
-          <a href=""> <i class="fa-solid fa-gift"></i>Men Store</a>
-        </li>
-        <li>
-          <a href=""><i class="fa-solid fa-lightbulb"></i>Women Store</a>
-        </li>
-      </ul>
-      <div class="login-btns">
-        <a href="./Pages/login-form-01/index.html"><button id="login">Sign Up</button></a>
-        <!-- <button id="signup">Sign Up</button> -->
-      </div>
-    </div>
+    
+
+  <div class="main-page" id="main-page">
     <div class="right-side-main-content">
+      <div class="navbar" id="navbar">
+        <div class="logo">
+          <h1>BuyMore</h1>
+        </div>
+        <ul id="ul-one">
+          <li class="active">
+            <a href=""> <i class="fa-solid fa-fire"></i> Dashborad</a>
+          </li>
+          <li>
+            <a href="">
+              <i class="fa-solid fa-cart-shopping"></i>Clothing Store</a>
+          </li>
+          <li>
+            <a href=""> <i class="fa-solid fa-gift"></i>Men Store</a>
+          </li>
+          <li>
+            <a href=""><i class="fa-solid fa-lightbulb"></i>Women Store</a>
+          </li>
+          <div class="login-btns">
+            <a href="./Pages/login-form-01/index.html"><button id="login">Sign Up</button></a>
+          </div>
+        </ul>
+      </div>
       <div class="top-search-content" id="top-search-content">
         <h2>Explore</h2>
         <div class="search-bar">
-          <input type="text" name="" id="search-bar" placeholder="search" />
+          <input type="text" name="" id="search-bar" placeholder="Search" />
           <button id="search">
             <i class="fa-solid fa-magnifying-glass"></i>
           </button>
         </div>
         <div></div>
       </div>
-      <div class="bottom-main-content">
+      <div class="bottom-main-content" id="bottom-main-content">
         <!-- IMAGES  -->
         <div class="img1" id="img1">
           <img src="./asst/Screenshot 2023-08-02 233002.png" alt="" class="one" />
@@ -67,15 +68,15 @@
             <img src="./asst/new5.jpg" alt=""/>
             <img src="./asst/new2.jpg" alt=""/> -->
         </div>
-        <div class="img2">
+        <div class="img2" id="img2">
           <img src="./asst/Screenshot 2023-08-02 233100.png" alt="" />
         </div>
         <div class="down-imgs">
-          <div class="img3">
+          <div class="img3" id="img3">
             <img src="./asst/23.6.7_edenrobe_HomePageBanner_WomenUnstitched_DSKTP.jpg" alt="" />
             <button id="shop-women">Shop Women</button>
           </div>
-          <div class="img4">
+          <div class="img4" id="img4">
             <img src="./asst/23.7.8_edenrobe_HomePageBanner_Men_DSKTP.jpg" alt="" />
             <button id="shop-women">Shop Men</button>
           </div>
@@ -83,16 +84,18 @@
       </div>
       <div class="inner-right">
         <div class="inner-right-top">
-          <div class="r-img1">
-            <div class="overlay"></div>
+          <div class="r-img1" id="r-img1">
+            <div class="overlay">
+              <!-- <h2>women</h2> -->
+            </div>
             <img src="./asst/23.webp" alt="" class="img1-r" />
           </div>
-          <div class="r-img2">
+          <div class="r-img2" id="r-img2">
             <img src="./asst/23s.webp" alt="" />
           </div>
         </div>
         <div class="inner-right-bottom">
-          <div class="r-img3">
+          <div class="r-img3" id="r-img3">
             <img src="./asst/Screenshot 2023-08-03 142050.png" alt="" />
           </div>
         </div>
@@ -100,39 +103,165 @@
     </div>
   </div>
   <!-- ===========================LOGIN FORM -->
-  <div class="scnd-page" style="height: 100vh">
+  <div class="scnd-page" id="scnd-page">
     <div class="sellers">
       <h4>Best Sellers</h4>
     </div>
     <div class="owl-carousel owl-theme">
       <div class="item">
         <img src="./asst/1-show.webp" alt="" />
+        <div class="rates">
+          <h4>Men's Dark Coffee Swish</h4>
+          <p>PKR 2,237</p>
+        </div>
       </div>
       <div class="item">
         <img src="./asst/2-show.webp" alt="" />
+        <div class="rates">
+          <h4>Men's Dark Coffee Swish</h4>
+          <p>PKR 3,237</p>
+        </div>
       </div>
       <div class="item">
         <img src="./asst/3-show.webp" alt="" />
+        <div class="rates">
+          <h4>Men's Dark Coffee Swish</h4>
+          <p>PKR 6,237</p>
+        </div>
       </div>
       <div class="item">
         <img src="./asst/4-show.webp" alt="" />
+        <div class="rates">
+          <h4>Men's Dark Coffee Swish</h4>
+          <p>PKR 1,237</p>
+        </div>
       </div>
       <div class="item">
         <img src="./asst/5-show.webp" alt="" />
+        <div class="rates">
+          <h4>Men's Dark Coffee Swish</h4>
+          <p>PKR 3,237</p>
+        </div>
       </div>
       <div class="item">
         <img src="./asst/6-show.webp" alt="" />
+        <div class="rates">
+          <h4>Men's Dark Coffee Swish</h4>
+          <p>PKR 2,237</p>
+        </div>
       </div>
       <div class="item">
         <img src="./asst/7-show.webp" alt="" />
+        <div class="rates">
+          <h4>Men's Dark Coffee Swish</h4>
+          <p>PKR 4,237</p>
+        </div>
       </div>
       <div class="item">
         <img src="./asst/8-show.webp" alt="" />
+        <div class="rates">
+          <h4>Men's Dark Coffee Swish</h4>
+          <p>PKR 5,237</p>
+        </div>
       </div>
-
+    </div>  
+    <!-- =-=-=-=-=-=-= -->
+    <h1 style="text-align: center; margin-block: 30px;">Best Sellers</h1>
+    <div class="owl-carousel owl-theme owl">
+      <div class="item">
+        <img src="./asst/1w.webp" alt="" />
+        <div class="rates">
+          <h4>Womens's Dark Coffee Swish</h4>
+          <p>PKR 2,237</p>
+        </div>
+      </div>
+      <div class="item">
+        <img src="./asst/2w.webp" alt="" />
+        <div class="rates">
+          <h4>Womens's Dark Coffee Swish</h4>
+          <p>PKR 3,237</p>
+        </div>
+      </div>
+      <div class="item">
+        <img src="./asst/3w.webp" alt="" />
+        <div class="rates">
+          <h4>Womens's Dark Coffee Swish</h4>
+          <p>PKR 6,237</p>
+        </div>
+      </div>
+      <div class="item">
+        <img src="./asst/4w.webp" alt="" />
+        <div class="rates">
+          <h4>Womens's Dark Coffee Swish</h4>
+          <p>PKR 1,237</p>
+        </div>
+      </div>
+      <div class="item">
+        <img src="./asst/5w.webp" alt="" />
+        <div class="rates">
+          <h4>Womens's Dark Coffee Swish</h4>
+          <p>PKR 3,237</p>
+        </div>
+      </div>
+      <div class="item">
+        <img src="./asst/23_W_WomanPret_EWTKE23-68241_1.webp" alt="" />
+        <div class="rates">
+          <h4>Womens's Dark Coffee Swish</h4>
+          <p>PKR 2,237</p>
+        </div>
+      </div>
+      <div class="item">
+        <img src="./asst/23_W_WomanPret_EWTKE23-69251S_R1.webp" alt="" />
+        <div class="rates">
+          <h4>Womens's Dark Coffee Swish</h4>
+          <p>PKR 4,237</p>
+        </div>
+      </div>
+    </div>  
+  </div>
+  </div>
+  <footer>
+    <div class="f-item-con">
+        <div class="app-info">
+            <span class='app-name'>
+                <span class='app-initial'>B</span>uyMore
+            </span>
+            <p>We provides you the <strong>Best quality</strong> and <strong>Fast delivery</strong></p>
+        </div>
+        <div class="useful-links">
+            <div class="footer-title">Useful Links</div>
+            <ul>
+                <li><a href="#main-page"">Dashborad</a></li>
+                <li><a href="./Pages/login-form-01/index.html"">Sign In</a></li>
+                <li><a href="./Pages/About Us/index.html">About Us</a></li>
+                <li><a href="#scnd-page">Suit Showcase</a></li>
+                <li>Advertise with Us</li>
+                <li>Terms and Conditions</li>
+            </ul>
+        </div>
+        <div class="help-sec">
+            <div class="footer-title">Help</div>
+            <ul>
+                <li>Help Me</li>
+                <li>Feedback</li>
+                <li>Report a Issue / Bug</li>
+            </ul>
+        </div>
+        <div class="g-i-t">
+            <div class="footer-title">Get in Touch</div>
+            <form action="/" method="post" class="space-y-2">
+                <input type="text" name="g-name" class="g-inp" id="g-name" placeholder='Name' />
+                <input type="email" name="g-email" class="g-inp" id="g-email" placeholder='Email' />
+                <textarea type="text" name="g-msg" class="g-inp h-40 resize-none" id="g-msg"
+                    placeholder='Message...'></textarea>
+                <button type="submit" class='f-btn'>Submit</button>
+            </form>
+        </div>
     </div>
-  </div>
-  </div>
+    <div class='cr-con'>Copyright &copy; 2023 | Made by Rehman<div>
+</footer>
+
+</body>
   <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM="
     crossorigin="anonymous"></script>
 

@@ -1,3 +1,102 @@
+//STORING ALL PICTURES IN ONE VERIABLE
+let allPicVeri = [];
+allPicVeri.push(document.getElementById('img1'))
+allPicVeri.push(document.getElementById('img2'))
+allPicVeri.push(document.getElementById('img3'))
+allPicVeri.push(document.getElementById('img4'))
+allPicVeri.push(document.getElementById('r-img1'))
+allPicVeri.push(document.getElementById('r-img2'))
+allPicVeri.push(document.getElementById('r-img3'))
+
+
+// allPicVeri.forEach((e)=>{
+//     e.addEventListener('click',()=>{
+//         let 
+
+//     })
+// })
+
+
+let all =JSON.parse(localStorage.getItem('allDataStored'))
+console.log(all)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 var tl = gsap.timeline();
 tl.from('#navbar',{
@@ -16,43 +115,39 @@ tl.from('#top-search-content',{
 tl.from('#img1',{
     opacity:0,
     x:-40,
-    duration:.2,
+    duration:.1
 })
 tl.from('.img2',{
     opacity:0,
     x:-40,
-    duration:.2
+    duration:.1
 });
 tl.from('.img3',{
     opacity:0,
     x:-40,
-    duration:.2
+    duration:.1
 });
 tl.from('.img4',{
     opacity:0,
     x:-40,
-    duration:.2
+    duration:.1
 });
 tl.from('.r-img1',{
     opacity:0,
     x:-40,
-    duration:.2
+    duration:.1
 });
 tl.from('.r-img2',{
     opacity:0,
     x:-40,
-    duration:.2
+    duration:.1
 });
 tl.from('.r-img3',{
     opacity:0,
     x:-40,
-    duration:.2
+    duration:.1
 });
-tl.from('.r-img4',{
-    opacity:0,
-    x:-40,
-    duration:.2
-});
+
 
 gsap.from('.sellers',{
     opacity:0,
@@ -66,57 +161,18 @@ gsap.from('.sellers',{
         scrub:true
     }
 })
-
-
-
-gsap.from('.owl-carousel ',{
+gsap.from('.owl-carousel',{
     opacity:0,
     x:-30,
     scrollTrigger: {
-        trigger:'.sellers',
+        trigger:'.owl-carousel',
         scroller:'body',
         // markers:true,
-        start:'top 80%',
+        start:'top 90%',
         end:"top 20%",
         scrub:true
     }
 })
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 $('.owl-carousel').owlCarousel({
     loop:true,

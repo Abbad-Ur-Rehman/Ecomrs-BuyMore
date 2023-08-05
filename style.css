@@ -9,21 +9,24 @@
 
 .main-page {
   width: 100vw;
-  height: 110vh;
+  height: 124vh;
   display: flex;
   position: relative;
 }
 
 .logo h1 {
+  width: 200px;
+  /* height: 100%; */
   position: relative;
   display: inline-block;
   margin-top: 20px;
+  margin-left: 30px;
   font-size: 35px;
 }
 
 .logo h1::before {
   content: '';
-  right: 54px;
+  right: 106px;
   bottom: 4px;
   position: absolute;
   width: 30px;
@@ -32,17 +35,28 @@
 }
 
 .navbar {
-  position: fixed;
+  position: relative;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  width: 13%;
-  height: 100vh;
-  border-right: 1px solid rgba(110, 109, 109, 0.397);
+  width: 100%;
+  height: 100px;
+  /* overflow: hidden; */
+  /* background: yellow; */
+  border-bottom: 1px solid rgba(110, 109, 109, 0.397);
 }
 
+.navbar ul{
+  /* margin-top:20px; */
+  width: 100%;
+  /* background: red; */
+  /* min-height: 100%; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 .navbar li {
-  margin-top: 60px;
+  margin-left: 100px;
+  margin-top: 20px;
 }
 
 .navbar li i {
@@ -70,11 +84,11 @@
 .login-btns {
   display: flex;
   flex-direction: column;
-  margin-top: 120px;
+  margin-right: 19px;
 }
 
 .login-btns button {
-  margin-top: 100px;
+  margin-top: 15px;
   width: 160px;
   height: 40px;
   font-size: 16px;
@@ -101,10 +115,9 @@
   position: absolute;
   right: 0px;
   top: 0px;
-  width: 87vw;
-  height: 100vh;
-
-
+  width: 100vw;
+  height: 100%;
+  /* background: red; */
 }
 
 .top-search-content {
@@ -128,6 +141,7 @@
   height: 40px;
   border-radius: 50px;
   border: 1px solid rgba(128, 128, 128, 0.363);
+  transition: .6s all;
 
 }
 
@@ -140,7 +154,11 @@
   outline: none;
   border: none;
 }
-
+.search-bar:hover,
+.search-bar:active,
+.search-bar:focus{
+  border: 1px solid blue;
+}
 .search-bar button {
   text-align: center;
   width: 30px;
@@ -148,50 +166,22 @@
   border-radius: 50px;
   border: 1px solid rgba(128, 128, 128, 0.363);
   background-color: transparent;
+  cursor: pointer;
 }
 
 .bottom-main-content {
   margin-top: 20px;
   padding: 15px 40px;
-  width: 50%;
+  width: 55%;
   overflow: hidden;
 }
 
-/* 
-
-
-@keyframes slide{
-  0%{
-      transform: translateX(0);
-  }
-  25%{
-      transform: translateX(0);
-  }
-  30%{
-      transform: translateX(-100%);
-  }
-  50%{
-      transform: translateX(-100%);
-  }
-  55%{
-      transform: translateX(-200%);
-  }
-  75%{
-      transform: translateX(-200%);
-  }
-  80%{
-      transform: translateX(-300%);
-  }
-  100%{
-      transform: translateX(-300%);
-  }
-} */
 .img1 {
   width: 100%;
   position: relative;
-  height: 220px;
+  height: 280px;
   overflow: hidden;
-  border-radius: 60px;
+  border-radius: 1px;
   display: flex;
 }
 
@@ -213,27 +203,11 @@
 
 .bottom-main-content .img2 {
   position: relative;
-  margin-top: 15px;
+  margin-top: 1px;
   width: 100%;
-  height: 220px;
+  height: 280px;
   overflow: hidden;
-  border-radius: 60px;
-}
-
-.img2 h3 {
-  position: absolute;
-  right: 40px;
-  top: 80px;
-  font-size: 35px;
-  color: white;
-}
-
-.img1 h3 {
-  position: absolute;
-  left: 40px;
-  top: 80px;
-  font-size: 35px;
-  color: white;
+  border-radius: 1px;
 }
 
 .img2 img {
@@ -248,11 +222,11 @@
 
 .bottom-main-content .img3 {
   position: relative;
-  margin-top: 15px;
-  width: 46%;
+  margin-top: 4px;
+  width: 50%;
   height: 290px;
   overflow: hidden;
-  border-radius: 60px;
+  border-radius: 1px;
 }
 
 .img3 img {
@@ -263,6 +237,13 @@
 .img3 img:hover {
   transform: translateY(-50px);
 }
+.overlay{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #0000007b;
+  display: none;
+}
 
 .img3 button {
   cursor: pointer;
@@ -270,7 +251,7 @@
   height: 35px;
   position: absolute;
   bottom: 50px;
-  left: 100px;
+  left: 140px;
   color: white;
   border-radius: 40px;
   border: 1px solid white;
@@ -280,12 +261,12 @@
 
 .bottom-main-content .img4 {
   position: relative;
-  margin-top: 15px;
-  width: 48%;
+  margin-top: 4px;
+  width: 50%;
   height: 290px;
   overflow: hidden;
-  border-radius: 60px;
-  margin-left: 30px;
+  border-radius: 1px;
+  margin-left: 4px;
 }
 
 .img4 img:hover {
@@ -303,7 +284,7 @@
   height: 35px;
   position: absolute;
   bottom: 50px;
-  left: 100px;
+  left: 140px;
   color: white;
   border-radius: 40px;
   border: 1px solid white;
@@ -321,9 +302,10 @@
 
 /* =-=-=-=-=-=-=-=-=-=-=-=-==-=-=-=-=--= */
 .inner-right {
+  /* background: red; */
   position: absolute;
-  top: 121px;
-  right: 0;
+  top: 230px;
+  right: -50px;
   height: 100%;
   width: 50%;
   padding: 10px 10px;
@@ -331,16 +313,16 @@
 
 .inner-right-top {
   display: flex;
-  gap: 20px;
+  gap: 4px;
 }
 
 .r-img1 {
   position: relative;
   margin-top: 15px;
-  width: 44%;
-  height: 550px;
+  width: 46%;
+  height: 560px;
   overflow: hidden;
-  border-radius: 60px;
+  border-radius: 1px;
 
 }
 
@@ -354,10 +336,10 @@
   /* background-color:red; */
   position: relative;
   margin-top: 15px;
-  width: 44%;
-  height: 550px;
+  width: 46%;
+  height: 560px;
   overflow: hidden;
-  border-radius: 60px;
+  border-radius: 1px;
 
 }
 
@@ -368,11 +350,11 @@
 }
 
 .r-img3 {
-  margin-top: 20px;
-  width: 91%;
-  height: 200px;
+  margin-top: 4px;
+  width: 92.4%;
+  height: 290px;
   overflow: hidden;
-  border-radius: 60px;
+  border-radius: 1px;
 
 }
 
@@ -383,9 +365,13 @@
 
 /*=================================================================== OWL CROSUL */
 .scnd-page{
+  margin-top: 20px;
+  height: 140vh;
+  position: relative;
   /* background-color: red; */
-  width: 85%;
-  margin-left: 250px;
+  width: 100%;
+  overflow: hidden;
+  /* margin-left: 250px; */
 
 }
 
@@ -396,17 +382,160 @@
 }
 .owl-carousel{
   width: 0%;
-  height: 610px;
+  height: 550px;
   overflow: hidden;
   display: flex;
+  /* background: red; */
 }
 
 .owl-carousel .item{
-
   width: 370px;
 }
 
 .item img{
   width: 100%;
   height: 100%;
+}
+.rates{
+  display: flex;
+  gap: 60px;
+}
+
+.rates h4{
+  font-weight: 300;
+}
+
+.rates p{
+  font-size:19px;
+  font-weight: 500;
+  color: red;
+}
+
+
+/* LOGIN PAGE */
+
+/* LOGIN PAGE END */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+:root{
+  --theme-col: #2d4bf0;
+}
+.space-y-2 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
+}
+footer{
+  background-color: white;
+  color: #232127;
+}
+.f-item-con{
+  padding: 1.5rem 4rem;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-gap: 2rem;
+}
+footer .app-name{
+  color: black;
+  border-left: 4px solid var(--theme-col);
+  padding-left: 1.5rem;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  font-weight: 700;
+}
+.app-name .app-initial{
+  color: var(--theme-col);
+}
+footer .app-info p{
+  color: rgb(0, 0, 0);
+  padding-left: 1.65rem;
+}
+
+footer .footer-title{ 
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  color: rgb(0, 0, 0);
+  border-left: 4px solid var(--theme-col);
+  padding-left: 1.5rem;
+  height: fit-content;
+}
+footer ul{ 
+  padding-left: 1.75rem;
+  color: rgb(0, 0, 0);
+  font-size: 0.875rem/* 14px */;
+  line-height: 1.25rem;
+  margin-top: .5rem;
+}
+footer ul li{ 
+  margin: .25rem 0;
+  cursor: pointer;
+  color: #000000;
+  width: fit-content;
+}
+footer ul li:hover{
+  color: rgb(0, 0, 0);
+}
+footer .help-sec{
+  grid-column-start: 2;
+}
+footer .cr-con{
+  background-color: #232127;
+  color: rgb(255, 255, 255);
+  padding: 1rem 4rem;
+  text-align: center;
+}
+.g-i-t{
+  display: grid;
+  grid-column-start: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+.g-i-t form{
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+  --tw-space-y-reverse: 0;
+  margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
+}
+form .g-inp{
+  padding: .25rem .5rem;
+  font-size: 16px;
+}
+.g-inp textarea{
+  height: 150px;
+}
+.f-btn{
+  padding: .25rem 1rem;
+  background-color: var(--theme-col);
+  border-radius: .25rem;
+  font-size: 16px;
+  color: rgb(0, 0, 0);
+  font-weight: 500;
+}
+
+footer a{
+  text-decoration: none;
+  color: black;
+  transition: .6s all;
+}
+footer a:hover{
+  text-decoration: underline;
+  color: black;
+}
+footer{
+  border-top: 1px solid rgba(128, 128, 128, 0.363);
 }
